@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>UMaT Press</title>
+  </head>
+  <body>
+    <!-- top header -->
+    <nav>
+      <div class="nav-responsive">
+        <h1 id="umat-press">UMaTPress</h1>
+        <h3 id="greetings">HELLO USERNAME</h3>
+        <div class="rectangle">
+          <a
+            id="account-user"
+            href="account-user"
+            style="text-decoration: none; color: black"
+            >ACCOUNT - USER</a
+          >
+        </div>
+        <a
+          href="#"
+          id="notification"
+          style="color: #918888; height: 30px; width: 30px"
+          ><i class="fa fa-bell"></i
+        ></a>
+        <div class="profile-image">
+          <img id="profile-img" src="/images/mysql.png" alt="img" />
+        </div>
+      </div>
+    </nav>
+    <!-- end of top navigation -->
+
+    <!-- side navigation -->
+    <nav class="side-nav">
+      <div id="content">
+        <div id="user-panel">
+          <p>User Panel</p>
+          <div id="user-post">
+            <a href="index.html">
+              <a href="#" id="bars" style="color: #84828a; font-size: 20px"
+                ><i class="fa fa-bars"></i
+              ></a>
+              <p>Posts</p>
+            </a>
+          </div>
+          <div id="user-account">
+            <a href="">
+              <a href="#" id="bars" style="color: #84828a; font-size: 20px"
+                ><i class="fa fa-briefcase"></i
+              ></a>
+              <p>User Account</p>
+            </a>
+          </div>
+          <div id="group-members">
+            <a href="">
+              <a href="#" id="bars" style="color: #84828a; font-size: 20px"
+                ><i class="fa fa-group"></i
+              ></a>
+              <p>Group Members</p>
+            </a>
+          </div>
+          <div id="create-post">
+            <a href="">
+              <a href="#" id="bars" style="color: #84828a; font-size: 20px"
+                ><i class="fa fa-group"></i
+              ></a>
+              <p>Create Post</p>
+            </a>
+          </div>
+        </div>
+        <div id="logout">
+          <a href="#" id="bars" style="color: black; font-size: 20px"
+            ><i class="fa fa-sign-out"></i
+          ></a>
+          <p style="color: #161515">Logout</p>
+        </div>
+      </div>
+    </nav>
+    <!-- End of side nav -->
+
+    <!-- body -->
+    <div>
+      <button id="discard-btn">Discard</button>
+      <button id="publish-btn">Publish</button>
+    </div>
+    <div>
+      <input
+        class="title-placeholder"
+        placeholder="THIS IS WHERE YOU TYPE YOUR TITTLE"
+      />
+    </div>
+    <div class="thumbnail-section">
+      <button id="file-btn">Choose File</button>
+      <h4 id="file-validator">No file Chosen</h4>
+    </div>
+    <!-- Text Area -->
+    <div class="text-area">
+      <div class="section">
+        <div class="row">
+          <div class="col">
+            <div class="first box">
+              <input
+                type="number"
+                id="font-size"
+                min="1"
+                max="100"
+                value="16"
+                onchange="f1(this)"
+              />
+            </div>
+            <div class="second box">
+              <button type="button" onclick="f2(this)">
+                <i class="fa-solid fa-bold"></i>
+              </button>
+              <button type="button" onclick="f3(this)">
+                <i class="fa-solid fa-italic"></i>
+              </button>
+              <button type="button" onclick="f4(this)">
+                <i class="fa-solid fa-underline"></i>
+              </button>
+            </div>
+            <div class="third box">
+              <button type="button" onclick="f5(this)">
+                <i class="fa-solid fa-align-left"></i>
+              </button>
+              <button type="button" onclick="f6(this)">
+                <i class="fa-solid fa-align-center"></i>
+              </button>
+              <button type="button" onclick="f7(this)">
+                <i class="fa-solid fa-align-right"></i>
+              </button>
+            </div>
+            <div class="fourth box">
+              <button type="button" onclick="f8(this)">aA</button>
+              <button type="button" onclick="f9(this)">
+                <i class="fa-solid fa-text-slash"></i>
+              </button>
+              <input type="color" onclick="f10(this)" />
+            </div>
+          </div>
+          <br />
+          <div class="col">
+            <textarea
+              name=""
+              id="textarea"
+              placeholder="Type your blog/Article here"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+
+      <script src="main.js"></script>
+    </div>
+    <!-- End of text Area -->
+    <!-- End of main body -->
+  </body>
+</html>
